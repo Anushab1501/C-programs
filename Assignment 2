@@ -1,0 +1,25 @@
+#include<stdio.h>
+main()
+{
+int a,b,evensum=0, oddsum=0,i=1;
+printf("enter the value of a and b:");
+scanf("%d%d",&a,&b);
+while(i<=a)
+{
+if(i%b==0){
+printf("%d\n",i);
+}
+if(i%2==0)
+{
+evensum=evensum+i;
+}
+else 
+{
+oddsum=oddsum+i;
+}
+i++;
+}
+printf("evensum is %d\n",evensum);
+printf("oddsum is %d\n",oddsum);
+}
+
